@@ -7,8 +7,39 @@
   <title>Arris Construction Email Signature</title>
 
   <style>
+    .row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
     .col{
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+    }
+
+    #right {
       border-left: 1px solid #000 !important;
+      padding-left: 10px;
+    }
+    img{
+      max-width: 190px;
+      max-height:121px;
+    }
+    .phone{
+      color: #000;
+      text-decoration: none;
+      font-weight: 400 !important;
+    }
+    address{
+      font-style: normal;
+    }
+    .bold{
+      font-weight: bold;
+      color: #000;
     }
   </style>
 
@@ -16,13 +47,29 @@
 <body>
   <div class="row">
     <div class="col">
-      <img src="https://uploads-ssl.webflow.com/63da5e8875e8160aac8ec389/63da67d3d88743183236977e_Arris-Construction-Group-Logo-p-500.png" alt="Arris Construction Logo" style="max-width:190px;max-height:121px">
+      <img src="https://uploads-ssl.webflow.com/63da5e8875e8160aac8ec389/63da67d3d88743183236977e_Arris-Construction-Group-Logo-p-500.png" alt="Arris Construction Group Logo">
     </div>
-    <div class="col" >
-      <p>President</p>
-      <br>
-      <p>Office:</p>
-    </div>
+    <address class="col" id="right" >
+        <p class="bold">President</p>
+        <p class="bold">
+          Office: <a href="tel:905-640-7770" class="phone">905-640-7770</a> 
+        </p> 
+        <br>
+        <a href="tel:647-325-7773" class="phone">Mobile: 647-325-7773</a> 
+        <br><br>
+        <a href="mailto:chrisg@arrisgroup.ca">chrisg@arrisgroup.ca</a>
+      </p>
+      <address>
+        50 Innovator Ave, Unit#9
+        <br>
+        Stouffville Ontario
+        <br>
+        L4A 0Y2
+      </address>
+      <p>
+        <a href="www.arrisgroup.ca" class="bold">www.arrisgroup.ca</a>
+      </p>
+    </address> 
   </div>
 </body>
 </html>
